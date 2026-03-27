@@ -1,37 +1,23 @@
 @import "tailwindcss";
+:root {
+  font-family: "Poppins", sans-serif;
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
 
 @theme {
-  --color-brand-light: #f67841;
-  --color-brand-mid: #f3541c;
-  --color-brand-dark: #e43a12;
   --color-text-primary: #292524;
   --color-text-secondary: #57534e;
   --color-text-tertiary: #8f8881;
   --color-text-highlight: #e43a12;
   --color-surface-primary: #ffffff;
   --color-surface-secondary: #fee7d6;
-  --color-surface-disabled: #e7e5e4;
   --color-stroke-default: #d6d3d1;
   --color-stroke-highlight: #f3541c;
   --color-semantic-error: #dc2626;
-  --color-supporting-orange: #f9a474;
-  --color-supporting-yellow: #fedf6f;
-  --color-supporting-green: #c7d78d;
-  --color-supporting-blue: #b8cedc;
-  --color-supporting-violet: #c3b2e7;
-  --color-supporting-pink: #f682a5;
 }
 
 @layer components {
-  .brand-color-light {
-    @apply bg-brand-light;
-  }
-  .brand-color-mid {
-    @apply bg-brand-mid;
-  }
-  .brand-color-dark {
-    @apply bg-brand-dark;
-  }
   .text-color-primary {
     @apply text-text-primary;
   }
@@ -50,9 +36,6 @@
   .surface-secondary {
     @apply bg-surface-secondary;
   }
-  .surface-disabled {
-    @apply bg-surface-disabled;
-  }
   .stroke-highlight {
     @apply border-stroke-highlight;
   }
@@ -61,24 +44,6 @@
   }
   .semantic-error {
     @apply text-semantic-error;
-  }
-  .supporting-orange {
-    @apply bg-supporting-orange;
-  }
-  .supporting-yellow {
-    @apply bg-supporting-yellow;
-  }
-  .supporting-green {
-    @apply bg-supporting-green;
-  }
-  .supporting-blue {
-    @apply bg-supporting-blue;
-  }
-  .supporting-violet {
-    @apply bg-supporting-violet;
-  }
-  .supporting-pink {
-    @apply bg-supporting-pink;
   }
 }
 
