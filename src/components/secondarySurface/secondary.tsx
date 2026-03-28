@@ -2,7 +2,7 @@ import logo from "../../assets/logo.svg";
 import img from "../../assets/Illustration.svg";
 export function Secondary() {
   return (
-    <section className="min-h-screen w-full bg-surface-secondary px-[4rem] py-[2rem]">
+    <section className="md:min-h-screen w-full bg-surface-secondary px-[4rem] py-[2rem] ">
       <div>
         <div className="flex flex-col">
           <div className="flex justify-start">
@@ -21,8 +21,6 @@ export function Secondary() {
             <img src={img} alt="Imagem" />
           </div>
         </div>
-
-        <div></div>
       </div>
     </section>
   );
