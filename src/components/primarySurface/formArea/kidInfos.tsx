@@ -7,12 +7,14 @@ export function KidInfos() {
       </div>
 
       <fieldset className="flex flex-col gap-[16px] ">
-        <legend className="font-semibold text-[16px] mb-[16px]">
+        <legend className="font-semibold text-[16px] mb-[16px] text-text-secondary">
           Informações da criança
         </legend>
 
         <div className="input-wrapper">
-          <label htmlFor="FullName">Nome completo</label>
+          <label htmlFor="FullName" className="text-text-tertiary">
+            Nome completo
+          </label>
           <input
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             type="text"
@@ -24,7 +26,9 @@ export function KidInfos() {
         </div>
 
         <div className="date-wrapper">
-          <label htmlFor="birthDate">Data de nascimento</label>
+          <label htmlFor="birthDate" className="text-text-tertiary">
+            Data de nascimento
+          </label>
           <input
             className="border rounded px-3 py-2 focus:outline-[#F67841]"
             type="date"
@@ -35,7 +39,9 @@ export function KidInfos() {
         </div>
 
         <div className="select-wrapper">
-          <label htmlFor="gender">Sexo</label>
+          <label htmlFor="gender" className="text-text-tertiary">
+            Sexo
+          </label>
           <select
             id="gender"
             name="gender"
@@ -48,7 +54,9 @@ export function KidInfos() {
         </div>
 
         <div className="input-wrapper">
-          <label htmlFor="medicalInfo">Informações médicas</label>
+          <label htmlFor="medicalInfo" className="text-text-tertiary">
+            Informações médicas
+          </label>
           <textarea
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             id="medicalInfo"
@@ -58,7 +66,9 @@ export function KidInfos() {
           />
         </div>
 
-        <label htmlFor="birth-file">Certidão de nascimento</label>
+        <label htmlFor="birth-file" className="text-text-tertiary">
+          Certidão de nascimento
+        </label>
 
         <div className="droparea-wrapper">
           <input type="file" id="birth-file" name="birth-file" />

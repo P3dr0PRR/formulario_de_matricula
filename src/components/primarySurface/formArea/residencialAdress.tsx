@@ -6,7 +6,9 @@ export function ResidencialAdress() {
       </div>
       <fieldset className="flex flex-col gap-[16px] ">
         <div className="input-wrapper">
-          <label htmlFor="street">CEP</label>
+          <label htmlFor="street" className="text-text-tertiary">
+            CEP
+          </label>
           <input
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             type="text"
@@ -19,7 +21,9 @@ export function ResidencialAdress() {
 
         <div className="input-wrapper grid grid-cols-2">
           <div className="flex flex-col gap-4 ">
-            <label htmlFor="street">Rua</label>
+            <label htmlFor="street" className="text-text-tertiary">
+              Rua
+            </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
               type="text"
@@ -30,7 +34,9 @@ export function ResidencialAdress() {
             />
           </div>
           <div className="flex flex-col gap-4 w-[176px]  justify-self-end">
-            <label htmlFor="street">Número</label>
+            <label htmlFor="street" className="text-text-tertiary">
+              Número
+            </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
               type="text"
@@ -43,7 +49,9 @@ export function ResidencialAdress() {
         </div>
         <div className="input-wrapper  grid grid-cols-2">
           <div className="flex flex-col gap-4 ">
-            <label htmlFor="street">Cidade</label>
+            <label htmlFor="street" className="text-text-tertiary">
+              Cidade
+            </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
               type="text"
@@ -54,7 +62,9 @@ export function ResidencialAdress() {
             />
           </div>
           <div className="flex flex-col gap-4 w-[176px] justify-self-end">
-            <label htmlFor="street">Estado</label>
+            <label htmlFor="street" className="text-text-tertiary">
+              Estado
+            </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
               type="text"
