@@ -1,4 +1,4 @@
-// import CloudUpload from "../../../assets/icons/cloud-upload.svg?react";
+
 export function KidInfos() {
   return (
     <section className="w-full flex flex-col gap-[4rem]">
