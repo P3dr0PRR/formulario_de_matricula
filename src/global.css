@@ -15,7 +15,7 @@
   --color-surface-secondary: #fee7d6;
   --color-stroke-default: #d6d3d1;
   --color-stroke-highlight: #f3541c;
-  --color-semantic-error: #dc2626;
+  --color-semantic-error: #dc2626;;
 }
 
 @layer components {
