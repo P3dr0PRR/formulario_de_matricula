@@ -3,6 +3,7 @@ import { KidInfos } from "./formArea/kidInfos";
 import { ResidencialAdress } from "./formArea/residencialAdress";
 import { ResponsableInfos } from "./formArea/responsableInfos";
 import { RegistrationOptions } from "./formArea/registrationOptions";
+import { PrivacyPolicy } from "./formArea/privacyPolicy";
 export function Form() {
   return (
     <section className="w-full flex flex-col gap-[32px] p-6 md:p-[4rem] scroll-auto">
@@ -12,6 +13,7 @@ export function Form() {
         <ResidencialAdress />
         <ResponsableInfos />
         <RegistrationOptions />
+        <PrivacyPolicy />
       </form>
     </section>
   );
