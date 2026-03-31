@@ -82,17 +82,17 @@ export function RegistrationOptions() {
   const [selectedSport, setSelectedSport] = useState("");
 
   return (
-    <section className="w-full flex flex-col gap-[4rem]">
+    <section className="w-full flex flex-col gap-16">
       <div className="flex flex-col">
         <h3 className="text-color-primary">Opções de matrícula</h3>
       </div>
 
-      <fieldset className="flex flex-col gap-[16px]">
+      <fieldset className="flex flex-col gap-4">
         <label className="text-text-tertiary">
           Selecione o turno de estudo
         </label>
 
-        <div className="grid w-full gap-[1rem] [grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))]">
+        <div className="grid w-full gap-4 grid-cols-[repeat(auto-fit,minmax(7.5rem,1fr))]">
           {shifts.map((shift) => (
             <RadioCard
               key={shift.id}
@@ -108,7 +108,7 @@ export function RegistrationOptions() {
           Em qual esporte você gostaria de inscrever seu filho?
         </label>
 
-        <div className="grid w-full gap-[1rem] [grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr))]">
+        <div className="grid w-full gap-4 grid-cols-[repeat(auto-fit,minmax(7.5rem,1fr))]">
           {sports.map((sport) => (
             <RadioCard
               key={sport.id}
