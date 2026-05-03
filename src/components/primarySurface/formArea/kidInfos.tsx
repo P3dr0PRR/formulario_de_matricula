@@ -3,31 +3,31 @@ export function KidInfos() {
   return (
     <section className="w-full flex flex-col gap-[4rem]">
       <div className="flex flex-col ">
-        <h3 className="text-color-primary">Informações da Criança</h3>
+        <h3 className="text-color-primary">Child's Information</h3>
       </div>
 
       <fieldset className="flex flex-col gap-[16px] ">
         <legend className="font-semibold text-[16px] mb-[16px] text-text-secondary">
-          Informações da criança
+          Child's Information
         </legend>
 
         <div className="input-wrapper">
           <label htmlFor="FullName" className="text-text-tertiary">
-            Nome completo
+            Full Name
           </label>
           <input
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             type="text"
             id="FullName"
             name="FullName"
-            placeholder="Digite o nome completo da criança"
+            placeholder="Please enter the child's full name"
             required
           />
         </div>
 
         <div className="date-wrapper">
           <label htmlFor="birthDate" className="text-text-tertiary">
-            Data de nascimento
+            Birth Date
           </label>
           <input
             className="border rounded px-3 py-2 focus:outline-[#F67841]"
@@ -40,34 +40,34 @@ export function KidInfos() {
 
         <div className="select-wrapper">
           <label htmlFor="gender" className="text-text-tertiary">
-            Sexo
+            Gender
           </label>
           <select
             id="gender"
             name="gender"
             className="appearance-none border border-stroke-default rounded px-3 py-2 focus:outline-[#F67841]"
           >
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
+            <option value="masculino">Male</option>
+            <option value="feminino">Female</option>
+            <option value="outro">Other</option>
           </select>
         </div>
 
         <div className="input-wrapper">
           <label htmlFor="medicalInfo" className="text-text-tertiary">
-            Informações médicas
+            Medical Information
           </label>
           <textarea
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             id="medicalInfo"
             name="medicalInfo"
-            placeholder="Ex: Ela tem alergia a glúten"
+            placeholder="Ex: She has a gluten allergy"
             required
           />
         </div>
 
         <label htmlFor="birth-file" className="text-text-tertiary">
-          Certidão de nascimento
+          Birth Certificate
         </label>
 
         <div className="droparea-wrapper">
@@ -96,7 +96,7 @@ export function KidInfos() {
           </svg>
 
           <p className="text-[#A8A29E]">
-            Clique aqui para selecionar os arquivos
+            Click here to select files
           </p>
         </div>
       </fieldset>
