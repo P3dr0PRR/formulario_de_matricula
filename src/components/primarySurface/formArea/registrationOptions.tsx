@@ -1,8 +1,8 @@
-import manha from "../../../assets/icons/sun-cloud-02.svg";
-import tarde from "../../../assets/icons/sun-02.svg";
-import futebol from "../../../assets/icons/football.svg";
-import basquete from "../../../assets/icons/basketball-02.svg";
-import natacao from "../../../assets/icons/swimming.svg";
+import morning from "../../../assets/icons/sun-cloud-02.svg";
+import afternoon from "../../../assets/icons/sun-02.svg";
+import soccer from "../../../assets/icons/football.svg";
+import basketball from "../../../assets/icons/basketball-02.svg";
+import swimming from "../../../assets/icons/swimming.svg";
 import yoga from "../../../assets/icons/yoga-02.svg";
 import volleyball from "../../../assets/icons/volleyball.svg";
 import boxing from "../../../assets/icons/boxing-glove-01.svg";
@@ -11,14 +11,14 @@ import radioCheck from "../../../assets/icons/radius-checked.svg";
 import { useState } from "react";
 
 const shifts = [
-  { id: "manha", label: "Manhã", icon: manha },
-  { id: "tarde", label: "Tarde", icon: tarde },
+  { id: "morning", label: "Morning", icon: morning },
+  { id: "afternoon", label: "Afternoon", icon: afternoon },
 ];
 
 const sports = [
-  { id: "futebol", label: "Futebol", icon: futebol },
-  { id: "basquete", label: "Basquete", icon: basquete },
-  { id: "natacao", label: "Natação", icon: natacao },
+  { id: "soccer", label: "Soccer", icon: soccer },
+  { id: "basketball", label: "Basketball", icon: basketball },
+  { id: "swimming", label: "Swimming", icon: swimming },
   { id: "yoga", label: "Yoga", icon: yoga },
   { id: "volleyball", label: "Volleyball", icon: volleyball },
   { id: "boxing", label: "Boxing", icon: boxing },
@@ -84,13 +84,11 @@ export function RegistrationOptions() {
   return (
     <section className="w-full flex flex-col gap-16">
       <div className="flex flex-col">
-        <h3 className="text-color-primary">Opções de matrícula</h3>
+        <h3 className="text-color-primary">Enrollment Options</h3>
       </div>
 
       <fieldset className="flex flex-col gap-4">
-        <label className="text-text-tertiary">
-          Selecione o turno de estudo
-        </label>
+        <label className="text-text-tertiary">Select the study shift</label>
 
         <div className="grid w-full gap-4 grid-cols-[repeat(auto-fit,minmax(7.5rem,1fr))]">
           {shifts.map((shift) => (
@@ -105,7 +103,7 @@ export function RegistrationOptions() {
         </div>
 
         <label className="text-text-tertiary">
-          Em qual esporte você gostaria de inscrever seu filho?
+          In which sport would you like to enroll your child?
         </label>
 
         <div className="grid w-full gap-4 grid-cols-[repeat(auto-fit,minmax(7.5rem,1fr))]">
