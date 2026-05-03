@@ -2,19 +2,19 @@ export function ResidencialAdress() {
   return (
     <section className="w-full flex flex-col gap-[4rem]">
       <div className="flex flex-col ">
-        <h3 className="text-color-primary">Endereço residencial</h3>
+        <h3 className="text-color-primary">Residential Address</h3>
       </div>
       <fieldset className="flex flex-col gap-[16px] ">
         <div className="input-wrapper">
           <label htmlFor="street" className="text-text-tertiary">
-            CEP
+            Postal Code
           </label>
           <input
             className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
             type="text"
             id="cep"
             name="cep"
-            placeholder="Digite o CEP"
+            placeholder="Please enter the postal code"
             required
           />
         </div>
@@ -22,20 +22,20 @@ export function ResidencialAdress() {
         <div className="input-wrapper grid grid-cols-2">
           <div className="flex flex-col gap-4 ">
             <label htmlFor="street" className="text-text-tertiary">
-              Rua
+              Street
             </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
               type="text"
               id="street"
               name="street"
-              placeholder="Rua das Flores"
+              placeholder="Please enter the street name"
               required
             />
           </div>
           <div className="flex flex-col gap-4 w-[176px]  justify-self-end">
             <label htmlFor="street" className="text-text-tertiary">
-              Número
+              Number
             </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
@@ -50,7 +50,7 @@ export function ResidencialAdress() {
         <div className="input-wrapper  grid grid-cols-2">
           <div className="flex flex-col gap-4 ">
             <label htmlFor="street" className="text-text-tertiary">
-              Cidade
+              City
             </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
@@ -63,7 +63,7 @@ export function ResidencialAdress() {
           </div>
           <div className="flex flex-col gap-4 w-[176px] justify-self-end">
             <label htmlFor="street" className="text-text-tertiary">
-              Estado
+              State
             </label>
             <input
               className="border border-stroke-default rounded px-3 py-2 placeholder:text-text-tertiary focus:outline-[#F67841]"
