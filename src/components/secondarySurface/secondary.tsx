@@ -9,16 +9,15 @@ export function Secondary() {
             <img src={logo} alt="Logo" />
           </div>
           <p className="text-[2rem] lg:text-[3.25rem] font-semibold">
-            Porque cada momento de{" "}
-            <span className="text-text-highlight">aprendizado</span> conta
+            Because every moment of{" "}
+            <span className="text-text-highlight">learning</span> counts
           </p>
           <p className="text-[1rem]">
-            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
-            acolhedor, seguro e estimulante.
+            Enroll your child in our school and watch them bloom in a welcoming, safe, and stimulating environment.
           </p>
 
           <div id="img" className="flex items-center justify-center">
-            <img src={img} alt="Imagem" />
+            <img src={img} alt="Illustration" />
           </div>
         </div>
       </div>
