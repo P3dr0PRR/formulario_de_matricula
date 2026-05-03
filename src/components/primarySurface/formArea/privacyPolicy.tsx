@@ -1,4 +1,3 @@
-
 import check from "../../../assets/icons/check.svg";
 
 import { useState } from "react";
@@ -11,7 +10,6 @@ export function PrivacyPolicy() {
         htmlFor="privacy-policy"
         className="flex items-start gap-3 cursor-pointer"
       >
-
         <div className="relative flex-shrink-0 mt-0.5">
           <input
             type="checkbox"
@@ -22,7 +20,7 @@ export function PrivacyPolicy() {
           />
           <div
             className={`w-4 h-4 border-2 flex items-center justify-center rounded-sm ${
-              checked ? "bg-" : "border-stroke-default"
+              checked ? "bg-stroke-highlight" : "border-stroke-default"
             }`}
           >
             {checked && <img src={check} alt="Checked" className="w-3 h-3" />}
@@ -30,15 +28,15 @@ export function PrivacyPolicy() {
         </div>
 
         <span className="text-sm text-text-default leading-snug">
-          Declaro que li e concordo com os{" "}
+          I declare read and agree to the{" "}
           <strong className="text-text-highlight font-semibold">
-            Termos e Condições
+            Terms and Conditions
           </strong>{" "}
-          e com a{" "}
+          and with the{" "}
           <strong className="text-text-highlight font-semibold">
-            Política de Privacidade
+            Privacy Policy
           </strong>{" "}
-          da escola Estrela do Amanhã.
+          of the Estrela do Amanhã school.
         </span>
       </label>
     </section>
